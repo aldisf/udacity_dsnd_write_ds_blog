@@ -26,6 +26,10 @@ External packages used in this notebook:
 
 # The Data
 
+The data contained in the ./data/seattle are in their compressed form, as GitHub will not allow uploading large files.
+
+They will need to be unzipped first, either manually or using the linux command gunzip {file_name}
+
 There are two data files that will be used in this analysis: 
 
 1. listings.csv - This .csv file contains the ~8k Seattle AirBnb listings as of Jan 2019

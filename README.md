@@ -7,6 +7,10 @@ This project will take a look at AirBnb's seattle listing data in 2019, answerin
 2. How does Seattle listings' price vary with time? 
 3. What other factors can predict that a particular listing is in an expensive area? 
 
+This repository is posted in: 
+
+https://medium.com/@aldistefanusfelim/exploring-seattle-airbnb-listings-where-when-and-why-ef7cd3bf6dc
+
 # Datasource
 
 All the data used in this project can be found in the ./data/seattle folder.

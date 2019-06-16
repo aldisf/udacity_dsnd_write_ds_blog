@@ -1,0 +1,2968 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_22e0076228e344b38cec6e89e1f54997 {
+                position : relative;
+                width : 500.0px;
+                height: 800.0px;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_22e0076228e344b38cec6e89e1f54997" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_22e0076228e344b38cec6e89e1f54997 = L.map(
+                                  'map_22e0076228e344b38cec6e89e1f54997',
+                                  {center: [47.6062,-122.3321],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_634dc27c85cb4652ba7fe855a1b3bc0f = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+        
+    
+            var circle_marker_fd3980448df747939275d9da6b3f1ee3 = L.circleMarker(
+                [47.62210039599935,-122.335750614546],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.466666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_68b447f572f04872b852ee128a3f7f71 = L.popup({maxWidth: '300'});
+
+            
+                var html_6b3bf4f12b3f4a0a9e928be344f67251 = $('<div id="html_6b3bf4f12b3f4a0a9e928be344f67251" style="width: 100.0%; height: 100.0%;">South Lake Union<br><br>Mean Daily Price: $89.8<br><br>Listings: 134</div>')[0];
+                popup_68b447f572f04872b852ee128a3f7f71.setContent(html_6b3bf4f12b3f4a0a9e928be344f67251);
+            
+
+            circle_marker_fd3980448df747939275d9da6b3f1ee3.bindPopup(popup_68b447f572f04872b852ee128a3f7f71);
+
+            
+        
+    
+            var circle_marker_b445da9d7a9a4933a431645a8890d928 = L.circleMarker(
+                [47.60868192939417,-122.33610959837506],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_e51c90209fe04021821858ef0ba23294 = L.popup({maxWidth: '300'});
+
+            
+                var html_c2e519a7566543a481f6a7a2f1340fbf = $('<div id="html_c2e519a7566543a481f6a7a2f1340fbf" style="width: 100.0%; height: 100.0%;">Central Business District<br><br>Mean Daily Price: $83.59<br><br>Listings: 222</div>')[0];
+                popup_e51c90209fe04021821858ef0ba23294.setContent(html_c2e519a7566543a481f6a7a2f1340fbf);
+            
+
+            circle_marker_b445da9d7a9a4933a431645a8890d928.bindPopup(popup_e51c90209fe04021821858ef0ba23294);
+
+            
+        
+    
+            var circle_marker_28cac701ce6942f0b5c4a8a4558d05fe = L.circleMarker(
+                [47.615109266880474,-122.34616289818543],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.766666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_ac6b3834eeef4cc3b9fc0de8d946f8ae = L.popup({maxWidth: '300'});
+
+            
+                var html_b9e90e70d9ff4a7fa005a50f7548084c = $('<div id="html_b9e90e70d9ff4a7fa005a50f7548084c" style="width: 100.0%; height: 100.0%;">Belltown<br><br>Mean Daily Price: $64.05<br><br>Listings: 503</div>')[0];
+                popup_ac6b3834eeef4cc3b9fc0de8d946f8ae.setContent(html_b9e90e70d9ff4a7fa005a50f7548084c);
+            
+
+            circle_marker_28cac701ce6942f0b5c4a8a4558d05fe.bindPopup(popup_ac6b3834eeef4cc3b9fc0de8d946f8ae);
+
+            
+        
+    
+            var circle_marker_a53e0137baa14250a7ce88a5913e1c27 = L.circleMarker(
+                [47.60978065763436,-122.34123135040551],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.433333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a47435f3f0854a7e84b5bab72a905bd7 = L.popup({maxWidth: '300'});
+
+            
+                var html_cbb5233d91d64225bc717bde10300831 = $('<div id="html_cbb5233d91d64225bc717bde10300831" style="width: 100.0%; height: 100.0%;">Pike-Market<br><br>Mean Daily Price: $63.35<br><br>Listings: 193</div>')[0];
+                popup_a47435f3f0854a7e84b5bab72a905bd7.setContent(html_cbb5233d91d64225bc717bde10300831);
+            
+
+            circle_marker_a53e0137baa14250a7ce88a5913e1c27.bindPopup(popup_a47435f3f0854a7e84b5bab72a905bd7);
+
+            
+        
+    
+            var circle_marker_c16ddb58eb66444088ca01cb63597161 = L.circleMarker(
+                [47.632077242191265,-122.34158418795901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.7666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_81d286e2d45e4757b9494e47a848c307 = L.popup({maxWidth: '300'});
+
+            
+                var html_ca604b6bf7074a4493e3310697d20eb7 = $('<div id="html_ca604b6bf7074a4493e3310697d20eb7" style="width: 100.0%; height: 100.0%;">Westlake<br><br>Mean Daily Price: $60.7<br><br>Listings: 113</div>')[0];
+                popup_81d286e2d45e4757b9494e47a848c307.setContent(html_ca604b6bf7074a4493e3310697d20eb7);
+            
+
+            circle_marker_c16ddb58eb66444088ca01cb63597161.bindPopup(popup_81d286e2d45e4757b9494e47a848c307);
+
+            
+        
+    
+            var circle_marker_54dc3b23bafe4c9f948b0bc900f0952c = L.circleMarker(
+                [47.60035269809186,-122.33357785751754],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.2666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_013741d3cf014b3b846f942c8d8e3f91 = L.popup({maxWidth: '300'});
+
+            
+                var html_ac93b60613dd46b0bcf6c5dca3c96704 = $('<div id="html_ac93b60613dd46b0bcf6c5dca3c96704" style="width: 100.0%; height: 100.0%;">Pioneer Square<br><br>Mean Daily Price: $60.2<br><br>Listings: 68</div>')[0];
+                popup_013741d3cf014b3b846f942c8d8e3f91.setContent(html_ac93b60613dd46b0bcf6c5dca3c96704);
+            
+
+            circle_marker_54dc3b23bafe4c9f948b0bc900f0952c.bindPopup(popup_013741d3cf014b3b846f942c8d8e3f91);
+
+            
+        
+    
+            var circle_marker_097b795eb92643278d224b68e25f63f6 = L.circleMarker(
+                [47.61078274335024,-122.3272544476706],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.166666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_8df70e8b04b741a3a72cc78d2431a3a2 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9e568ec833e4077805694275087cfe9 = $('<div id="html_b9e568ec833e4077805694275087cfe9" style="width: 100.0%; height: 100.0%;">First Hill<br><br>Mean Daily Price: $58.95<br><br>Listings: 305</div>')[0];
+                popup_8df70e8b04b741a3a72cc78d2431a3a2.setContent(html_b9e568ec833e4077805694275087cfe9);
+            
+
+            circle_marker_097b795eb92643278d224b68e25f63f6.bindPopup(popup_8df70e8b04b741a3a72cc78d2431a3a2);
+
+            
+        
+    
+            var circle_marker_5f74c2da01124e01aa41c5dc1172c18f = L.circleMarker(
+                [47.64755268105726,-122.32037965639928],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_6795ea85eaa84c95a1c2acb8c18327b7 = L.popup({maxWidth: '300'});
+
+            
+                var html_5acbbce7bede49d5b5592f99b8796677 = $('<div id="html_5acbbce7bede49d5b5592f99b8796677" style="width: 100.0%; height: 100.0%;">Portage Bay<br><br>Mean Daily Price: $57.26<br><br>Listings: 31</div>')[0];
+                popup_6795ea85eaa84c95a1c2acb8c18327b7.setContent(html_5acbbce7bede49d5b5592f99b8796677);
+            
+
+            circle_marker_5f74c2da01124e01aa41c5dc1172c18f.bindPopup(popup_6795ea85eaa84c95a1c2acb8c18327b7);
+
+            
+        
+    
+            var circle_marker_0eb8656f6dae4afc9b1bae982b98f1ef = L.circleMarker(
+                [47.599289746841514,-122.32447887594559],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.3333333333333335,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_9f93c5b240424f2a92f02e831092407d = L.popup({maxWidth: '300'});
+
+            
+                var html_f52a2380859645afa20bee797ffb6b96 = $('<div id="html_f52a2380859645afa20bee797ffb6b96" style="width: 100.0%; height: 100.0%;">International District<br><br>Mean Daily Price: $53.35<br><br>Listings: 70</div>')[0];
+                popup_9f93c5b240424f2a92f02e831092407d.setContent(html_f52a2380859645afa20bee797ffb6b96);
+            
+
+            circle_marker_0eb8656f6dae4afc9b1bae982b98f1ef.bindPopup(popup_9f93c5b240424f2a92f02e831092407d);
+
+            
+        
+    
+            var circle_marker_5c641a69654b40bf9b6d9ee4cf7c4c97 = L.circleMarker(
+                [47.622717958674556,-122.29125104837361],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_d90ba0ac6164430c8623a5f75c79b3df = L.popup({maxWidth: '300'});
+
+            
+                var html_3a9b32a83b2244d9aa25333b00e45166 = $('<div id="html_3a9b32a83b2244d9aa25333b00e45166" style="width: 100.0%; height: 100.0%;">Harrison/Denny-Blaine<br><br>Mean Daily Price: $52.32<br><br>Listings: 37</div>')[0];
+                popup_d90ba0ac6164430c8623a5f75c79b3df.setContent(html_3a9b32a83b2244d9aa25333b00e45166);
+            
+
+            circle_marker_5c641a69654b40bf9b6d9ee4cf7c4c97.bindPopup(popup_d90ba0ac6164430c8623a5f75c79b3df);
+
+            
+        
+    
+            var circle_marker_1caba8955c734799a4e137ea75fd6f52 = L.circleMarker(
+                [47.621025745578216,-122.32080558421816],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.633333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_3b07fd5318db40a6b472cfcbd7e2ef41 = L.popup({maxWidth: '300'});
+
+            
+                var html_8622f969b84c4e889b5b3baa7c9b3728 = $('<div id="html_8622f969b84c4e889b5b3baa7c9b3728" style="width: 100.0%; height: 100.0%;">Broadway<br><br>Mean Daily Price: $49.31<br><br>Listings: 619</div>')[0];
+                popup_3b07fd5318db40a6b472cfcbd7e2ef41.setContent(html_8622f969b84c4e889b5b3baa7c9b3728);
+            
+
+            circle_marker_1caba8955c734799a4e137ea75fd6f52.bindPopup(popup_3b07fd5318db40a6b472cfcbd7e2ef41);
+
+            
+        
+    
+            var circle_marker_8700cbfa046041eab33efd690941db48 = L.circleMarker(
+                [47.6125172640708,-122.29065679396929],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.1333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_48d58aa6dc5e4889bbee1b36ed1b0aac = L.popup({maxWidth: '300'});
+
+            
+                var html_d79b7a2826884c058a535ee5a5a4e9e5 = $('<div id="html_d79b7a2826884c058a535ee5a5a4e9e5" style="width: 100.0%; height: 100.0%;">Madrona<br><br>Mean Daily Price: $49.27<br><br>Listings: 64</div>')[0];
+                popup_48d58aa6dc5e4889bbee1b36ed1b0aac.setContent(html_d79b7a2826884c058a535ee5a5a4e9e5);
+            
+
+            circle_marker_8700cbfa046041eab33efd690941db48.bindPopup(popup_48d58aa6dc5e4889bbee1b36ed1b0aac);
+
+            
+        
+    
+            var circle_marker_d95f77613fb84a27bcb8f683806ea3e0 = L.circleMarker(
+                [47.62552701176844,-122.35664491392903],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.433333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_931c60597cd64ae0832e948f96ce9952 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c411f52833a412d97879e7a6deeca5d = $('<div id="html_5c411f52833a412d97879e7a6deeca5d" style="width: 100.0%; height: 100.0%;">Lower Queen Anne<br><br>Mean Daily Price: $49.23<br><br>Listings: 193</div>')[0];
+                popup_931c60597cd64ae0832e948f96ce9952.setContent(html_5c411f52833a412d97879e7a6deeca5d);
+            
+
+            circle_marker_d95f77613fb84a27bcb8f683806ea3e0.bindPopup(popup_931c60597cd64ae0832e948f96ce9952);
+
+            
+        
+    
+            var circle_marker_fef0f0bb0a174484bd810b98c42c04c0 = L.circleMarker(
+                [47.635542297167284,-122.34823307173181],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.466666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a533ec9dabeb486496444f0cf2b59498 = L.popup({maxWidth: '300'});
+
+            
+                var html_889e8791c526432eb537cc5c401302df = $('<div id="html_889e8791c526432eb537cc5c401302df" style="width: 100.0%; height: 100.0%;">East Queen Anne<br><br>Mean Daily Price: $47.0<br><br>Listings: 134</div>')[0];
+                popup_a533ec9dabeb486496444f0cf2b59498.setContent(html_889e8791c526432eb537cc5c401302df);
+            
+
+            circle_marker_fef0f0bb0a174484bd810b98c42c04c0.bindPopup(popup_a533ec9dabeb486496444f0cf2b59498);
+
+            
+        
+    
+            var circle_marker_b62cda58651743b39af5a67055ca7761 = L.circleMarker(
+                [47.635592257485975,-122.36743785275554],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_e30d53070df040ecafbe305333f11899 = L.popup({maxWidth: '300'});
+
+            
+                var html_5b2721745a884936bdcfb4dec2758982 = $('<div id="html_5b2721745a884936bdcfb4dec2758982" style="width: 100.0%; height: 100.0%;">West Queen Anne<br><br>Mean Daily Price: $46.65<br><br>Listings: 130</div>')[0];
+                popup_e30d53070df040ecafbe305333f11899.setContent(html_5b2721745a884936bdcfb4dec2758982);
+            
+
+            circle_marker_b62cda58651743b39af5a67055ca7761.bindPopup(popup_e30d53070df040ecafbe305333f11899);
+
+            
+        
+    
+            var circle_marker_71cb2a73c05642f29a9b9da2e0fd70ee = L.circleMarker(
+                [47.67747597085773,-122.39900195238405],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.8333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_5f65fbf88c1e4c7d9970aefca27d75cf = L.popup({maxWidth: '300'});
+
+            
+                var html_879631923f8c455286aa8a60a0e5b11f = $('<div id="html_879631923f8c455286aa8a60a0e5b11f" style="width: 100.0%; height: 100.0%;">Sunset Hill<br><br>Mean Daily Price: $46.23<br><br>Listings: 55</div>')[0];
+                popup_5f65fbf88c1e4c7d9970aefca27d75cf.setContent(html_879631923f8c455286aa8a60a0e5b11f);
+            
+
+            circle_marker_71cb2a73c05642f29a9b9da2e0fd70ee.bindPopup(popup_5f65fbf88c1e4c7d9970aefca27d75cf);
+
+            
+        
+    
+            var circle_marker_861a3c01f70b454684e0e9a1e02d4988 = L.circleMarker(
+                [47.62342182747789,-122.30665429662568],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_0c83fd26756b483cbd284d2004762bf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_71c1371d97d04687899961ec7dcdb0a6 = $('<div id="html_71c1371d97d04687899961ec7dcdb0a6" style="width: 100.0%; height: 100.0%;">Stevens<br><br>Mean Daily Price: $46.23<br><br>Listings: 231</div>')[0];
+                popup_0c83fd26756b483cbd284d2004762bf7.setContent(html_71c1371d97d04687899961ec7dcdb0a6);
+            
+
+            circle_marker_861a3c01f70b454684e0e9a1e02d4988.bindPopup(popup_0c83fd26756b483cbd284d2004762bf7);
+
+            
+        
+    
+            var circle_marker_66fcbfb68322443498b977c70816e9c9 = L.circleMarker(
+                [47.565514799803736,-122.38610273655947],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.2666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_5dd231a3a892480db1502e60231031ad = L.popup({maxWidth: '300'});
+
+            
+                var html_7cf0b6a4b30b4473b8568982d2f30d74 = $('<div id="html_7cf0b6a4b30b4473b8568982d2f30d74" style="width: 100.0%; height: 100.0%;">Genesee<br><br>Mean Daily Price: $45.97<br><br>Listings: 68</div>')[0];
+                popup_5dd231a3a892480db1502e60231031ad.setContent(html_7cf0b6a4b30b4473b8568982d2f30d74);
+            
+
+            circle_marker_66fcbfb68322443498b977c70816e9c9.bindPopup(popup_5dd231a3a892480db1502e60231031ad);
+
+            
+        
+    
+            var circle_marker_6b7b59455c5a489ebd380abfe3c25f73 = L.circleMarker(
+                [47.63650056344184,-122.28076000469063],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.9,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_78af83fa91f9459ca9cc43f5729b4fe8 = L.popup({maxWidth: '300'});
+
+            
+                var html_930279831351473798baed7149e201b6 = $('<div id="html_930279831351473798baed7149e201b6" style="width: 100.0%; height: 100.0%;">Madison Park<br><br>Mean Daily Price: $45.17<br><br>Listings: 27</div>')[0];
+                popup_78af83fa91f9459ca9cc43f5729b4fe8.setContent(html_930279831351473798baed7149e201b6);
+            
+
+            circle_marker_6b7b59455c5a489ebd380abfe3c25f73.bindPopup(popup_78af83fa91f9459ca9cc43f5729b4fe8);
+
+            
+        
+    
+            var circle_marker_2b244e192e374065905f7639c7b41cb5 = L.circleMarker(
+                [47.641024023679314,-122.32544906454707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.433333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_39266a1697d84bb0a403a2b708a1bab0 = L.popup({maxWidth: '300'});
+
+            
+                var html_3026c8a85ca64ccab259b28795885ff1 = $('<div id="html_3026c8a85ca64ccab259b28795885ff1" style="width: 100.0%; height: 100.0%;">Eastlake<br><br>Mean Daily Price: $44.82<br><br>Listings: 103</div>')[0];
+                popup_39266a1697d84bb0a403a2b708a1bab0.setContent(html_3026c8a85ca64ccab259b28795885ff1);
+            
+
+            circle_marker_2b244e192e374065905f7639c7b41cb5.bindPopup(popup_39266a1697d84bb0a403a2b708a1bab0);
+
+            
+        
+    
+            var circle_marker_9c7753183b8d4a448cdb2e065e35b40a = L.circleMarker(
+                [47.643814643101855,-122.39050782628965],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#EC7063",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#EC7063",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.066666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_37b8327fdade4cb2b466b9befa369842 = L.popup({maxWidth: '300'});
+
+            
+                var html_19302ad0045c49f58ed353e8f53ed521 = $('<div id="html_19302ad0045c49f58ed353e8f53ed521" style="width: 100.0%; height: 100.0%;">Southeast Magnolia<br><br>Mean Daily Price: $44.77<br><br>Listings: 62</div>')[0];
+                popup_37b8327fdade4cb2b466b9befa369842.setContent(html_19302ad0045c49f58ed353e8f53ed521);
+            
+
+            circle_marker_9c7753183b8d4a448cdb2e065e35b40a.bindPopup(popup_37b8327fdade4cb2b466b9befa369842);
+
+            
+        
+    
+            var circle_marker_812ae2887fc242f8882ae8f1196fc32f = L.circleMarker(
+                [47.72287890674775,-122.28645507640614],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_3cbf73d282b848329fae466d24b4bdaa = L.popup({maxWidth: '300'});
+
+            
+                var html_0c89806b3a50420e80aa63ebe2b4d975 = $('<div id="html_0c89806b3a50420e80aa63ebe2b4d975" style="width: 100.0%; height: 100.0%;">Cedar Park<br><br>Mean Daily Price: $44.27<br><br>Listings: 30</div>')[0];
+                popup_3cbf73d282b848329fae466d24b4bdaa.setContent(html_0c89806b3a50420e80aa63ebe2b4d975);
+            
+
+            circle_marker_812ae2887fc242f8882ae8f1196fc32f.bindPopup(popup_3cbf73d282b848329fae466d24b4bdaa);
+
+            
+        
+    
+            var circle_marker_f2bd0de041d3496295e79d5b03277649 = L.circleMarker(
+                [47.58121919346294,-122.335987106684],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.1,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_fbae837d10a84de09893d8f759e0b4c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_d81dcbb2e2814e9898378e26fe480e35 = $('<div id="html_d81dcbb2e2814e9898378e26fe480e35" style="width: 100.0%; height: 100.0%;">Industrial District<br><br>Mean Daily Price: $44.0<br><br>Listings: 3</div>')[0];
+                popup_fbae837d10a84de09893d8f759e0b4c3.setContent(html_d81dcbb2e2814e9898378e26fe480e35);
+            
+
+            circle_marker_f2bd0de041d3496295e79d5b03277649.bindPopup(popup_fbae837d10a84de09893d8f759e0b4c3);
+
+            
+        
+    
+            var circle_marker_bd04b7d690c4433dbac97cd6acbddcf3 = L.circleMarker(
+                [47.64595366731446,-122.36393489442196],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5.233333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_424dc43552a04239a44ca12266694ae4 = L.popup({maxWidth: '300'});
+
+            
+                var html_1226cacf5a3c4a128176e01063a7a001 = $('<div id="html_1226cacf5a3c4a128176e01063a7a001" style="width: 100.0%; height: 100.0%;">North Queen Anne<br><br>Mean Daily Price: $42.41<br><br>Listings: 157</div>')[0];
+                popup_424dc43552a04239a44ca12266694ae4.setContent(html_1226cacf5a3c4a128176e01063a7a001);
+            
+
+            circle_marker_bd04b7d690c4433dbac97cd6acbddcf3.bindPopup(popup_424dc43552a04239a44ca12266694ae4);
+
+            
+        
+    
+            var circle_marker_5038d25580f14ca29cce7ed4683547b0 = L.circleMarker(
+                [47.656729691307355,-122.35143998615818],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.933333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_32c119ad57b04b6795fd0c027bf9815f = L.popup({maxWidth: '300'});
+
+            
+                var html_7800db1416924055b6808a21be8b3235 = $('<div id="html_7800db1416924055b6808a21be8b3235" style="width: 100.0%; height: 100.0%;">Fremont<br><br>Mean Daily Price: $42.16<br><br>Listings: 298</div>')[0];
+                popup_32c119ad57b04b6795fd0c027bf9815f.setContent(html_7800db1416924055b6808a21be8b3235);
+            
+
+            circle_marker_5038d25580f14ca29cce7ed4683547b0.bindPopup(popup_32c119ad57b04b6795fd0c027bf9815f);
+
+            
+        
+    
+            var circle_marker_4c0103b535a54284826f87401ecd8847 = L.circleMarker(
+                [47.66333383489446,-122.31348227176389],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 7.733333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_910c79dbb68d4b0dab785dd1e2bccd59 = L.popup({maxWidth: '300'});
+
+            
+                var html_393341b2f2c346428dbb16884f2d91e5 = $('<div id="html_393341b2f2c346428dbb16884f2d91e5" style="width: 100.0%; height: 100.0%;">University District<br><br>Mean Daily Price: $42.13<br><br>Listings: 232</div>')[0];
+                popup_910c79dbb68d4b0dab785dd1e2bccd59.setContent(html_393341b2f2c346428dbb16884f2d91e5);
+            
+
+            circle_marker_4c0103b535a54284826f87401ecd8847.bindPopup(popup_910c79dbb68d4b0dab785dd1e2bccd59);
+
+            
+        
+    
+            var circle_marker_597fa872f6ca420999b074575898674c = L.circleMarker(
+                [47.66133031308445,-122.28126763981602],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_fe5561bbce5843a7971b44aaa9721484 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a211c647cca442582a6e38b95836c48 = $('<div id="html_4a211c647cca442582a6e38b95836c48" style="width: 100.0%; height: 100.0%;">Laurelhurst<br><br>Mean Daily Price: $42.01<br><br>Listings: 17</div>')[0];
+                popup_fe5561bbce5843a7971b44aaa9721484.setContent(html_4a211c647cca442582a6e38b95836c48);
+            
+
+            circle_marker_597fa872f6ca420999b074575898674c.bindPopup(popup_fe5561bbce5843a7971b44aaa9721484);
+
+            
+        
+    
+            var circle_marker_a86d23d1813348bebfbf13cab055de4b = L.circleMarker(
+                [47.580170752913745,-122.38791792067654],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_5bd6acd383614c01a667fc4c4ff49c09 = L.popup({maxWidth: '300'});
+
+            
+                var html_6af82923452c43bea35c078df161ad72 = $('<div id="html_6af82923452c43bea35c078df161ad72" style="width: 100.0%; height: 100.0%;">North Admiral<br><br>Mean Daily Price: $41.97<br><br>Listings: 102</div>')[0];
+                popup_5bd6acd383614c01a667fc4c4ff49c09.setContent(html_6af82923452c43bea35c078df161ad72);
+            
+
+            circle_marker_a86d23d1813348bebfbf13cab055de4b.bindPopup(popup_5bd6acd383614c01a667fc4c4ff49c09);
+
+            
+        
+    
+            var circle_marker_9eeb6f2154e541269363772dee93f5d9 = L.circleMarker(
+                [47.64445228785726,-122.38292181388768],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_b5eaa969ea20410e8ecf30f91fff91bc = L.popup({maxWidth: '300'});
+
+            
+                var html_a46a9b332bf9435fa0260d2d3eb13465 = $('<div id="html_a46a9b332bf9435fa0260d2d3eb13465" style="width: 100.0%; height: 100.0%;">Interbay<br><br>Mean Daily Price: $41.96<br><br>Listings: 15</div>')[0];
+                popup_b5eaa969ea20410e8ecf30f91fff91bc.setContent(html_a46a9b332bf9435fa0260d2d3eb13465);
+            
+
+            circle_marker_9eeb6f2154e541269363772dee93f5d9.bindPopup(popup_b5eaa969ea20410e8ecf30f91fff91bc);
+
+            
+        
+    
+            var circle_marker_325e0d2394954e80b33a3072f36d3ca8 = L.circleMarker(
+                [47.57484871494096,-122.40708011440091],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.433333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_30f32724bb514d21b01ced14d8a07eb2 = L.popup({maxWidth: '300'});
+
+            
+                var html_2ff800eb80cf4b2eb381fbe32c2d2f6c = $('<div id="html_2ff800eb80cf4b2eb381fbe32c2d2f6c" style="width: 100.0%; height: 100.0%;">Alki<br><br>Mean Daily Price: $41.75<br><br>Listings: 103</div>')[0];
+                popup_30f32724bb514d21b01ced14d8a07eb2.setContent(html_2ff800eb80cf4b2eb381fbe32c2d2f6c);
+            
+
+            circle_marker_325e0d2394954e80b33a3072f36d3ca8.bindPopup(popup_30f32724bb514d21b01ced14d8a07eb2);
+
+            
+        
+    
+            var circle_marker_0bb2373fec8348ef89dde6e1d8b37211 = L.circleMarker(
+                [47.6085528420844,-122.31020266464193],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 9.933333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_4196a86060414c14ad9768cd07e74f0b = L.popup({maxWidth: '300'});
+
+            
+                var html_35d7307e6d3a47b8a572ed43d9b147e2 = $('<div id="html_35d7307e6d3a47b8a572ed43d9b147e2" style="width: 100.0%; height: 100.0%;">Minor<br><br>Mean Daily Price: $40.75<br><br>Listings: 298</div>')[0];
+                popup_4196a86060414c14ad9768cd07e74f0b.setContent(html_35d7307e6d3a47b8a572ed43d9b147e2);
+            
+
+            circle_marker_0bb2373fec8348ef89dde6e1d8b37211.bindPopup(popup_4196a86060414c14ad9768cd07e74f0b);
+
+            
+        
+    
+            var circle_marker_b5eccab30d6c4131a6a2bfd5c2a76671 = L.circleMarker(
+                [47.6547906876319,-122.39376745182311],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.8,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_72bfcd2ac6144b3dae481a8e37ae1de5 = L.popup({maxWidth: '300'});
+
+            
+                var html_a589aa18edec433582f4819e8c3b3a41 = $('<div id="html_a589aa18edec433582f4819e8c3b3a41" style="width: 100.0%; height: 100.0%;">Lawton Park<br><br>Mean Daily Price: $40.19<br><br>Listings: 84</div>')[0];
+                popup_72bfcd2ac6144b3dae481a8e37ae1de5.setContent(html_a589aa18edec433582f4819e8c3b3a41);
+            
+
+            circle_marker_b5eccab30d6c4131a6a2bfd5c2a76671.bindPopup(popup_72bfcd2ac6144b3dae481a8e37ae1de5);
+
+            
+        
+    
+            var circle_marker_9388e6c8d8c2415d86a3165d8807cc5e = L.circleMarker(
+                [47.52168299945706,-122.38684225934132],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.1666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_055c8141363447f285ad04ba5c0f22f2 = L.popup({maxWidth: '300'});
+
+            
+                var html_cc7ff46a4ec84b45a3baa77bbbad8d1e = $('<div id="html_cc7ff46a4ec84b45a3baa77bbbad8d1e" style="width: 100.0%; height: 100.0%;">Fauntleroy<br><br>Mean Daily Price: $39.74<br><br>Listings: 35</div>')[0];
+                popup_055c8141363447f285ad04ba5c0f22f2.setContent(html_cc7ff46a4ec84b45a3baa77bbbad8d1e);
+            
+
+            circle_marker_9388e6c8d8c2415d86a3165d8807cc5e.bindPopup(popup_055c8141363447f285ad04ba5c0f22f2);
+
+            
+        
+    
+            var circle_marker_131de40dce7b4b62b0bed02252ec55a3 = L.circleMarker(
+                [47.60487572889316,-122.32005696428004],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_11315c58c30248ab81c0162dc6578412 = L.popup({maxWidth: '300'});
+
+            
+                var html_3e6f7839ce4e474dac7a4b38625b9b08 = $('<div id="html_3e6f7839ce4e474dac7a4b38625b9b08" style="width: 100.0%; height: 100.0%;">Yesler Terrace<br><br>Mean Daily Price: $39.25<br><br>Listings: 39</div>')[0];
+                popup_11315c58c30248ab81c0162dc6578412.setContent(html_3e6f7839ce4e474dac7a4b38625b9b08);
+            
+
+            circle_marker_131de40dce7b4b62b0bed02252ec55a3.bindPopup(popup_11315c58c30248ab81c0162dc6578412);
+
+            
+        
+    
+            var circle_marker_44d444fad5194799af4e4ec2a2e04af1 = L.circleMarker(
+                [47.68115878391215,-122.33257968954412],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.566666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_c354db3206914fca9364226756a5ecf7 = L.popup({maxWidth: '300'});
+
+            
+                var html_9409f27eac4a4a27bb18da6dc6c60f16 = $('<div id="html_9409f27eac4a4a27bb18da6dc6c60f16" style="width: 100.0%; height: 100.0%;">Green Lake<br><br>Mean Daily Price: $39.22<br><br>Listings: 137</div>')[0];
+                popup_c354db3206914fca9364226756a5ecf7.setContent(html_9409f27eac4a4a27bb18da6dc6c60f16);
+            
+
+            circle_marker_44d444fad5194799af4e4ec2a2e04af1.bindPopup(popup_c354db3206914fca9364226756a5ecf7);
+
+            
+        
+    
+            var circle_marker_dc1f92cb63c44183b58bdc2d37abf4f1 = L.circleMarker(
+                [47.67143228137723,-122.26841048002352],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.7333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_3ed1d67adb3e404f85a246df403fb223 = L.popup({maxWidth: '300'});
+
+            
+                var html_02b0ac0a792148398bfa1ac7c10de8c2 = $('<div id="html_02b0ac0a792148398bfa1ac7c10de8c2" style="width: 100.0%; height: 100.0%;">Windermere<br><br>Mean Daily Price: $39.16<br><br>Listings: 22</div>')[0];
+                popup_3ed1d67adb3e404f85a246df403fb223.setContent(html_02b0ac0a792148398bfa1ac7c10de8c2);
+            
+
+            circle_marker_dc1f92cb63c44183b58bdc2d37abf4f1.bindPopup(popup_3ed1d67adb3e404f85a246df403fb223);
+
+            
+        
+    
+            var circle_marker_bc6ed25698e34aef838957f02e4282b1 = L.circleMarker(
+                [47.68202800795194,-122.37141423931497],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.066666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_3465344210ac40f4aefccb3421b851de = L.popup({maxWidth: '300'});
+
+            
+                var html_ac8dafb768284ae0b012253e3047cba2 = $('<div id="html_ac8dafb768284ae0b012253e3047cba2" style="width: 100.0%; height: 100.0%;">Whittier Heights<br><br>Mean Daily Price: $39.11<br><br>Listings: 62</div>')[0];
+                popup_3465344210ac40f4aefccb3421b851de.setContent(html_ac8dafb768284ae0b012253e3047cba2);
+            
+
+            circle_marker_bc6ed25698e34aef838957f02e4282b1.bindPopup(popup_3465344210ac40f4aefccb3421b851de);
+
+            
+        
+    
+            var circle_marker_f753d3c15fb7462cb36f040a7b1a4e3b = L.circleMarker(
+                [47.671945860786096,-122.38646192626726],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.4,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_664d2b266b12489a9773f62ab4e82897 = L.popup({maxWidth: '300'});
+
+            
+                var html_4a12b6ef47ca44a69207d53e41c41956 = $('<div id="html_4a12b6ef47ca44a69207d53e41c41956" style="width: 100.0%; height: 100.0%;">Adams<br><br>Mean Daily Price: $38.98<br><br>Listings: 132</div>')[0];
+                popup_664d2b266b12489a9773f62ab4e82897.setContent(html_4a12b6ef47ca44a69207d53e41c41956);
+            
+
+            circle_marker_f753d3c15fb7462cb36f040a7b1a4e3b.bindPopup(popup_664d2b266b12489a9773f62ab4e82897);
+
+            
+        
+    
+            var circle_marker_6d4bfc438e63413683f2d9b5da3a4880 = L.circleMarker(
+                [47.64057606521658,-122.30832705556035],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.566666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_1dc64b74809f4c73861d412e73d3115e = L.popup({maxWidth: '300'});
+
+            
+                var html_766c807ee873400693cf387b7e186465 = $('<div id="html_766c807ee873400693cf387b7e186465" style="width: 100.0%; height: 100.0%;">Montlake<br><br>Mean Daily Price: $38.82<br><br>Listings: 77</div>')[0];
+                popup_1dc64b74809f4c73861d412e73d3115e.setContent(html_766c807ee873400693cf387b7e186465);
+            
+
+            circle_marker_6d4bfc438e63413683f2d9b5da3a4880.bindPopup(popup_1dc64b74809f4c73861d412e73d3115e);
+
+            
+        
+    
+            var circle_marker_2f1d5be2587643db87d7d0741f351dac = L.circleMarker(
+                [47.57724377274525,-122.28988594219393],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.3,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a72b7f9af7ab4a4488f49ad97b5fc8c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_ac591f881e644eb2a77a985267d7f873 = $('<div id="html_ac591f881e644eb2a77a985267d7f873" style="width: 100.0%; height: 100.0%;">Mount Baker<br><br>Mean Daily Price: $38.52<br><br>Listings: 99</div>')[0];
+                popup_a72b7f9af7ab4a4488f49ad97b5fc8c3.setContent(html_ac591f881e644eb2a77a985267d7f873);
+            
+
+            circle_marker_2f1d5be2587643db87d7d0741f351dac.bindPopup(popup_a72b7f9af7ab4a4488f49ad97b5fc8c3);
+
+            
+        
+    
+            var circle_marker_2ad2b28cc8ac49038caa2de119f59da3 = L.circleMarker(
+                [47.64377697577905,-122.40534420486607],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.8,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_638db57fe0424e1f96a73b5523830f1d = L.popup({maxWidth: '300'});
+
+            
+                var html_814495a5c9b34d5ba14e949b962fe04d = $('<div id="html_814495a5c9b34d5ba14e949b962fe04d" style="width: 100.0%; height: 100.0%;">Briarcliff<br><br>Mean Daily Price: $38.34<br><br>Listings: 24</div>')[0];
+                popup_638db57fe0424e1f96a73b5523830f1d.setContent(html_814495a5c9b34d5ba14e949b962fe04d);
+            
+
+            circle_marker_2ad2b28cc8ac49038caa2de119f59da3.bindPopup(popup_638db57fe0424e1f96a73b5523830f1d);
+
+            
+        
+    
+            var circle_marker_b9c4024992c14a4eb7713e0ebf4f7ee3 = L.circleMarker(
+                [47.675728346131606,-122.35520678253094],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.866666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_89a653071efd4fe28681b675c7b23bfa = L.popup({maxWidth: '300'});
+
+            
+                var html_d9df55e2455b4e02b2cdcc476ed05fbc = $('<div id="html_d9df55e2455b4e02b2cdcc476ed05fbc" style="width: 100.0%; height: 100.0%;">Phinney Ridge<br><br>Mean Daily Price: $38.1<br><br>Listings: 146</div>')[0];
+                popup_89a653071efd4fe28681b675c7b23bfa.setContent(html_d9df55e2455b4e02b2cdcc476ed05fbc);
+            
+
+            circle_marker_b9c4024992c14a4eb7713e0ebf4f7ee3.bindPopup(popup_89a653071efd4fe28681b675c7b23bfa);
+
+            
+        
+    
+            var circle_marker_5f33943cd3b9451d9dfcf6dcfadd7cdb = L.circleMarker(
+                [47.6703191420683,-122.28638378304909],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_0b9f65e640334d4ba7341c298bf0ddfb = L.popup({maxWidth: '300'});
+
+            
+                var html_3eaa498d13b14cf39a0daf6487102d7e = $('<div id="html_3eaa498d13b14cf39a0daf6487102d7e" style="width: 100.0%; height: 100.0%;">Bryant<br><br>Mean Daily Price: $37.81<br><br>Listings: 51</div>')[0];
+                popup_0b9f65e640334d4ba7341c298bf0ddfb.setContent(html_3eaa498d13b14cf39a0daf6487102d7e);
+            
+
+            circle_marker_5f33943cd3b9451d9dfcf6dcfadd7cdb.bindPopup(popup_0b9f65e640334d4ba7341c298bf0ddfb);
+
+            
+        
+    
+            var circle_marker_6c1a7e7ff7534163a1435f6fde573db5 = L.circleMarker(
+                [47.61382370356248,-122.29908763360784],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.466666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_20aa1e6bbf674ddc99caed35b86d179e = L.popup({maxWidth: '300'});
+
+            
+                var html_d65ad1e3cdbe44d9a46cee8a3aeee414 = $('<div id="html_d65ad1e3cdbe44d9a46cee8a3aeee414" style="width: 100.0%; height: 100.0%;">Mann<br><br>Mean Daily Price: $37.52<br><br>Listings: 134</div>')[0];
+                popup_20aa1e6bbf674ddc99caed35b86d179e.setContent(html_d65ad1e3cdbe44d9a46cee8a3aeee414);
+            
+
+            circle_marker_6c1a7e7ff7534163a1435f6fde573db5.bindPopup(popup_20aa1e6bbf674ddc99caed35b86d179e);
+
+            
+        
+    
+            var circle_marker_6b08382ba010403c98fd4ac94ae6b09e = L.circleMarker(
+                [47.699781402356564,-122.38785841564672],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_94c1c9208e974e8a9b245e83421a0f37 = L.popup({maxWidth: '300'});
+
+            
+                var html_26f3a1e9b35f4bc29412873d5a266125 = $('<div id="html_26f3a1e9b35f4bc29412873d5a266125" style="width: 100.0%; height: 100.0%;">North Beach/Blue Ridge<br><br>Mean Daily Price: $37.45<br><br>Listings: 32</div>')[0];
+                popup_94c1c9208e974e8a9b245e83421a0f37.setContent(html_26f3a1e9b35f4bc29412873d5a266125);
+            
+
+            circle_marker_6b08382ba010403c98fd4ac94ae6b09e.bindPopup(popup_94c1c9208e974e8a9b245e83421a0f37);
+
+            
+        
+    
+            var circle_marker_706c628649664ffca5f7387aaad967d8 = L.circleMarker(
+                [47.55392486139397,-122.2689261468253],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_c26019cb12f34c9bb33e3e0851a81e76 = L.popup({maxWidth: '300'});
+
+            
+                var html_158bdae611584d2391ac645998d2a099 = $('<div id="html_158bdae611584d2391ac645998d2a099" style="width: 100.0%; height: 100.0%;">Seward Park<br><br>Mean Daily Price: $37.21<br><br>Listings: 78</div>')[0];
+                popup_c26019cb12f34c9bb33e3e0851a81e76.setContent(html_158bdae611584d2391ac645998d2a099);
+            
+
+            circle_marker_706c628649664ffca5f7387aaad967d8.bindPopup(popup_c26019cb12f34c9bb33e3e0851a81e76);
+
+            
+        
+    
+            var circle_marker_01952d70ad7d4b5187ee00b57f51ccc7 = L.circleMarker(
+                [47.59849879073985,-122.29306630534832],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_d16fe0805df045f48d626f22cd0ae658 = L.popup({maxWidth: '300'});
+
+            
+                var html_831ca1b818d44c33ba53d3c2a97040b6 = $('<div id="html_831ca1b818d44c33ba53d3c2a97040b6" style="width: 100.0%; height: 100.0%;">Leschi<br><br>Mean Daily Price: $37.02<br><br>Listings: 96</div>')[0];
+                popup_d16fe0805df045f48d626f22cd0ae658.setContent(html_831ca1b818d44c33ba53d3c2a97040b6);
+            
+
+            circle_marker_01952d70ad7d4b5187ee00b57f51ccc7.bindPopup(popup_d16fe0805df045f48d626f22cd0ae658);
+
+            
+        
+    
+            var circle_marker_89d204bbd9e6486fa2029c863df308ed = L.circleMarker(
+                [47.6823397432124,-122.38463434622224],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.966666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_f2f1ba280bfb49cd982c6f9f50e76e98 = L.popup({maxWidth: '300'});
+
+            
+                var html_ccf6cb26593e4c3e8fe2cbda1d933bad = $('<div id="html_ccf6cb26593e4c3e8fe2cbda1d933bad" style="width: 100.0%; height: 100.0%;">Loyal Heights<br><br>Mean Daily Price: $37.01<br><br>Listings: 89</div>')[0];
+                popup_f2f1ba280bfb49cd982c6f9f50e76e98.setContent(html_ccf6cb26593e4c3e8fe2cbda1d933bad);
+            
+
+            circle_marker_89d204bbd9e6486fa2029c863df308ed.bindPopup(popup_f2f1ba280bfb49cd982c6f9f50e76e98);
+
+            
+        
+    
+            var circle_marker_8c1369e7d2864a8283d2d18e5c04d01f = L.circleMarker(
+                [47.659795294804965,-122.3325208423264],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10.566666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_935d27dbeaf349fba4959a0ee9746f3e = L.popup({maxWidth: '300'});
+
+            
+                var html_52499ed84c604f08818c8585317a8161 = $('<div id="html_52499ed84c604f08818c8585317a8161" style="width: 100.0%; height: 100.0%;">Wallingford<br><br>Mean Daily Price: $37.0<br><br>Listings: 317</div>')[0];
+                popup_935d27dbeaf349fba4959a0ee9746f3e.setContent(html_52499ed84c604f08818c8585317a8161);
+            
+
+            circle_marker_8c1369e7d2864a8283d2d18e5c04d01f.bindPopup(popup_935d27dbeaf349fba4959a0ee9746f3e);
+
+            
+        
+    
+            var circle_marker_b3e0980e3b96408b900a43875ad0c1de = L.circleMarker(
+                [47.675405361366956,-122.30066397499041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.2333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a9ec557bd8934190b4f4818eb1522d74 = L.popup({maxWidth: '300'});
+
+            
+                var html_ecf905c632b24f1fb82374a959ce81cc = $('<div id="html_ecf905c632b24f1fb82374a959ce81cc" style="width: 100.0%; height: 100.0%;">Ravenna<br><br>Mean Daily Price: $36.88<br><br>Listings: 97</div>')[0];
+                popup_a9ec557bd8934190b4f4818eb1522d74.setContent(html_ecf905c632b24f1fb82374a959ce81cc);
+            
+
+            circle_marker_b3e0980e3b96408b900a43875ad0c1de.bindPopup(popup_a9ec557bd8934190b4f4818eb1522d74);
+
+            
+        
+    
+            var circle_marker_ce2a1ad4c9bb4570802f44a0076ff1de = L.circleMarker(
+                [47.69681795230304,-122.371422253796],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_5a3a40c504eb4500b8e4e5368e54f099 = L.popup({maxWidth: '300'});
+
+            
+                var html_488ac2b160954034883a284350ae8e47 = $('<div id="html_488ac2b160954034883a284350ae8e47" style="width: 100.0%; height: 100.0%;">Crown Hill<br><br>Mean Daily Price: $36.65<br><br>Listings: 39</div>')[0];
+                popup_5a3a40c504eb4500b8e4e5368e54f099.setContent(html_488ac2b160954034883a284350ae8e47);
+            
+
+            circle_marker_ce2a1ad4c9bb4570802f44a0076ff1de.bindPopup(popup_5a3a40c504eb4500b8e4e5368e54f099);
+
+            
+        
+    
+            var circle_marker_e696af27b685413680daa5afd414012c = L.circleMarker(
+                [47.68049917410264,-122.31536772145562],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.8333333333333335,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_9950e76b9fb542b992c3aa828a97cd83 = L.popup({maxWidth: '300'});
+
+            
+                var html_864530207d7a416796801db87ccac31e = $('<div id="html_864530207d7a416796801db87ccac31e" style="width: 100.0%; height: 100.0%;">Roosevelt<br><br>Mean Daily Price: $36.49<br><br>Listings: 85</div>')[0];
+                popup_9950e76b9fb542b992c3aa828a97cd83.setContent(html_864530207d7a416796801db87ccac31e);
+            
+
+            circle_marker_e696af27b685413680daa5afd414012c.bindPopup(popup_9950e76b9fb542b992c3aa828a97cd83);
+
+            
+        
+    
+            var circle_marker_864ebd577b8a48d4b7a5de6ad240d483 = L.circleMarker(
+                [47.668615363481756,-122.3667139082915],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.566666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_4716cee212534f5b8eafa3dd03f0ab36 = L.popup({maxWidth: '300'});
+
+            
+                var html_511188fa57514db1bc898d323af00bdb = $('<div id="html_511188fa57514db1bc898d323af00bdb" style="width: 100.0%; height: 100.0%;">West Woodland<br><br>Mean Daily Price: $36.23<br><br>Listings: 137</div>')[0];
+                popup_4716cee212534f5b8eafa3dd03f0ab36.setContent(html_511188fa57514db1bc898d323af00bdb);
+            
+
+            circle_marker_864ebd577b8a48d4b7a5de6ad240d483.bindPopup(popup_4716cee212534f5b8eafa3dd03f0ab36);
+
+            
+        
+    
+            var circle_marker_3d03b82d44524b44890c829f731ba0c3 = L.circleMarker(
+                [47.54008370148946,-122.28870255197938],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.26666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_552bf81625394c06aad9c55f38b927a3 = L.popup({maxWidth: '300'});
+
+            
+                var html_e8690de6e24044e2801c32360a1ea071 = $('<div id="html_e8690de6e24044e2801c32360a1ea071" style="width: 100.0%; height: 100.0%;">Holly Park<br><br>Mean Daily Price: $36.2<br><br>Listings: 8</div>')[0];
+                popup_552bf81625394c06aad9c55f38b927a3.setContent(html_e8690de6e24044e2801c32360a1ea071);
+            
+
+            circle_marker_3d03b82d44524b44890c829f731ba0c3.bindPopup(popup_552bf81625394c06aad9c55f38b927a3);
+
+            
+        
+    
+            var circle_marker_031d070309294783bf99e557826498e7 = L.circleMarker(
+                [47.7097111206818,-122.30691571454165],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_6974715ac5ba4a7888f93acb847a9c0d = L.popup({maxWidth: '300'});
+
+            
+                var html_fb0fd7f0ed8f424e9214221ccc60556f = $('<div id="html_fb0fd7f0ed8f424e9214221ccc60556f" style="width: 100.0%; height: 100.0%;">Victory Heights<br><br>Mean Daily Price: $36.11<br><br>Listings: 40</div>')[0];
+                popup_6974715ac5ba4a7888f93acb847a9c0d.setContent(html_fb0fd7f0ed8f424e9214221ccc60556f);
+            
+
+            circle_marker_031d070309294783bf99e557826498e7.bindPopup(popup_6974715ac5ba4a7888f93acb847a9c0d);
+
+            
+        
+    
+            var circle_marker_ca4d863b1833487f8c5eb4b45876faf0 = L.circleMarker(
+                [47.551392430402856,-122.39332647460554],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.1333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_46d2b8be3ea249c2872a474e0822f79c = L.popup({maxWidth: '300'});
+
+            
+                var html_7f11f330c77d4a319fb4ea6ee1893ede = $('<div id="html_7f11f330c77d4a319fb4ea6ee1893ede" style="width: 100.0%; height: 100.0%;">Seaview<br><br>Mean Daily Price: $36.05<br><br>Listings: 34</div>')[0];
+                popup_46d2b8be3ea249c2872a474e0822f79c.setContent(html_7f11f330c77d4a319fb4ea6ee1893ede);
+            
+
+            circle_marker_ca4d863b1833487f8c5eb4b45876faf0.bindPopup(popup_46d2b8be3ea249c2872a474e0822f79c);
+
+            
+        
+    
+            var circle_marker_786feadc6d3c4b398cc8a9c154a8a18f = L.circleMarker(
+                [47.68115972807669,-122.27242516290889],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_6e54107890ed424d84e72dfe3688c408 = L.popup({maxWidth: '300'});
+
+            
+                var html_5f560655bc0e47d9b52394d0aa51a3f7 = $('<div id="html_5f560655bc0e47d9b52394d0aa51a3f7" style="width: 100.0%; height: 100.0%;">View Ridge<br><br>Mean Daily Price: $35.8<br><br>Listings: 20</div>')[0];
+                popup_6e54107890ed424d84e72dfe3688c408.setContent(html_5f560655bc0e47d9b52394d0aa51a3f7);
+            
+
+            circle_marker_786feadc6d3c4b398cc8a9c154a8a18f.bindPopup(popup_6e54107890ed424d84e72dfe3688c408);
+
+            
+        
+    
+            var circle_marker_48dcab9053814f4b896f1d6015974df3 = L.circleMarker(
+                [47.581913492882094,-122.31118916629052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a2a952b9873a4c2bb72de5ca23e197d7 = L.popup({maxWidth: '300'});
+
+            
+                var html_136e2a671f12465ab37f5ce83f58f1bc = $('<div id="html_136e2a671f12465ab37f5ce83f58f1bc" style="width: 100.0%; height: 100.0%;">North Beacon Hill<br><br>Mean Daily Price: $35.65<br><br>Listings: 200</div>')[0];
+                popup_a2a952b9873a4c2bb72de5ca23e197d7.setContent(html_136e2a671f12465ab37f5ce83f58f1bc);
+            
+
+            circle_marker_48dcab9053814f4b896f1d6015974df3.bindPopup(popup_a2a952b9873a4c2bb72de5ca23e197d7);
+
+            
+        
+    
+            var circle_marker_a4d135d7934743bd89956a0f6b5ebbfa = L.circleMarker(
+                [47.69050456630459,-122.29318914141984],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_7d871a0b7e1740cda7166396375b954a = L.popup({maxWidth: '300'});
+
+            
+                var html_48ea7ce4671744839137b28f7feea5a8 = $('<div id="html_48ea7ce4671744839137b28f7feea5a8" style="width: 100.0%; height: 100.0%;">Wedgwood<br><br>Mean Daily Price: $35.59<br><br>Listings: 40</div>')[0];
+                popup_7d871a0b7e1740cda7166396375b954a.setContent(html_48ea7ce4671744839137b28f7feea5a8);
+            
+
+            circle_marker_a4d135d7934743bd89956a0f6b5ebbfa.bindPopup(popup_7d871a0b7e1740cda7166396375b954a);
+
+            
+        
+    
+            var circle_marker_641e8a487068469383e408a61b2099a0 = L.circleMarker(
+                [47.55954758181003,-122.2857356195333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4.833333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_96529cab5c844a05b144069d9f44e2ad = L.popup({maxWidth: '300'});
+
+            
+                var html_b305ca23ea8f472186f71d9ffbb812a7 = $('<div id="html_b305ca23ea8f472186f71d9ffbb812a7" style="width: 100.0%; height: 100.0%;">Columbia City<br><br>Mean Daily Price: $35.47<br><br>Listings: 145</div>')[0];
+                popup_96529cab5c844a05b144069d9f44e2ad.setContent(html_b305ca23ea8f472186f71d9ffbb812a7);
+            
+
+            circle_marker_641e8a487068469383e408a61b2099a0.bindPopup(popup_96529cab5c844a05b144069d9f44e2ad);
+
+            
+        
+    
+            var circle_marker_564fb3ffd69e44edba1ce66ab883353e = L.circleMarker(
+                [47.70270069906672,-122.27866531807388],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.1333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_ea0aa428052f4271b273d65ed078e5f3 = L.popup({maxWidth: '300'});
+
+            
+                var html_ab33d750cfbe4313ab7bc5db8176b489 = $('<div id="html_ab33d750cfbe4313ab7bc5db8176b489" style="width: 100.0%; height: 100.0%;">Matthews Beach<br><br>Mean Daily Price: $35.45<br><br>Listings: 34</div>')[0];
+                popup_ea0aa428052f4271b273d65ed078e5f3.setContent(html_ab33d750cfbe4313ab7bc5db8176b489);
+            
+
+            circle_marker_564fb3ffd69e44edba1ce66ab883353e.bindPopup(popup_ea0aa428052f4271b273d65ed078e5f3);
+
+            
+        
+    
+            var circle_marker_43f08530465b43b2911293db601496ba = L.circleMarker(
+                [47.71912125644083,-122.35194349041016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_e1c6f5b0f48d4cde9a5661bb6312b418 = L.popup({maxWidth: '300'});
+
+            
+                var html_ec48333225f34f33824b3299d50006ae = $('<div id="html_ec48333225f34f33824b3299d50006ae" style="width: 100.0%; height: 100.0%;">Bitter Lake<br><br>Mean Daily Price: $35.12<br><br>Listings: 40</div>')[0];
+                popup_e1c6f5b0f48d4cde9a5661bb6312b418.setContent(html_ec48333225f34f33824b3299d50006ae);
+            
+
+            circle_marker_43f08530465b43b2911293db601496ba.bindPopup(popup_e1c6f5b0f48d4cde9a5661bb6312b418);
+
+            
+        
+    
+            var circle_marker_e9a82e1439034006aa089ef002d719e9 = L.circleMarker(
+                [47.55577787360681,-122.380792765002],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.5333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_178be26ea9434b2fa58ea9328b557a3e = L.popup({maxWidth: '300'});
+
+            
+                var html_0b8a15811ccb471f83c5b09737c79d34 = $('<div id="html_0b8a15811ccb471f83c5b09737c79d34" style="width: 100.0%; height: 100.0%;">Fairmount Park<br><br>Mean Daily Price: $34.84<br><br>Listings: 46</div>')[0];
+                popup_178be26ea9434b2fa58ea9328b557a3e.setContent(html_0b8a15811ccb471f83c5b09737c79d34);
+            
+
+            circle_marker_e9a82e1439034006aa089ef002d719e9.bindPopup(popup_178be26ea9434b2fa58ea9328b557a3e);
+
+            
+        
+    
+            var circle_marker_8e0f25e573a747acb7ee812a7f81e6e4 = L.circleMarker(
+                [47.697101182236715,-122.31610334449427],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.1,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_da7cf8ed2f6e4f32ab622d07bc5bdbd2 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f161b816da4496a915a46cfa232ac43 = $('<div id="html_6f161b816da4496a915a46cfa232ac43" style="width: 100.0%; height: 100.0%;">Maple Leaf<br><br>Mean Daily Price: $34.82<br><br>Listings: 63</div>')[0];
+                popup_da7cf8ed2f6e4f32ab622d07bc5bdbd2.setContent(html_6f161b816da4496a915a46cfa232ac43);
+            
+
+            circle_marker_8e0f25e573a747acb7ee812a7f81e6e4.bindPopup(popup_da7cf8ed2f6e4f32ab622d07bc5bdbd2);
+
+            
+        
+    
+            var circle_marker_f3e79752b3844f27b61fe11477a73a43 = L.circleMarker(
+                [47.53923542846633,-122.3851445779707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#F4D03F",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#F4D03F",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.8333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_588576d5f3954c84aee69864abe205ac = L.popup({maxWidth: '300'});
+
+            
+                var html_87b1a48432914f8d82821a8d28f2a588 = $('<div id="html_87b1a48432914f8d82821a8d28f2a588" style="width: 100.0%; height: 100.0%;">Gatewood<br><br>Mean Daily Price: $34.69<br><br>Listings: 55</div>')[0];
+                popup_588576d5f3954c84aee69864abe205ac.setContent(html_87b1a48432914f8d82821a8d28f2a588);
+            
+
+            circle_marker_f3e79752b3844f27b61fe11477a73a43.bindPopup(popup_588576d5f3954c84aee69864abe205ac);
+
+            
+        
+    
+            var circle_marker_763f3ff3ea214129833b66b798b4f6cb = L.circleMarker(
+                [47.54590608214427,-122.32062384365139],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.9,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_6621cd3a421d43c38eeee1180af8d113 = L.popup({maxWidth: '300'});
+
+            
+                var html_c98a6e4b80424053aad0a03a5428ce16 = $('<div id="html_c98a6e4b80424053aad0a03a5428ce16" style="width: 100.0%; height: 100.0%;">Georgetown<br><br>Mean Daily Price: $34.69<br><br>Listings: 27</div>')[0];
+                popup_6621cd3a421d43c38eeee1180af8d113.setContent(html_c98a6e4b80424053aad0a03a5428ce16);
+            
+
+            circle_marker_763f3ff3ea214129833b66b798b4f6cb.bindPopup(popup_6621cd3a421d43c38eeee1180af8d113);
+
+            
+        
+    
+            var circle_marker_8015dd8c3f164727b892423a7b102619 = L.circleMarker(
+                [47.59543608791463,-122.30435090473243],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 3.933333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_0f21529aa2014ff0ba44cb2c82e504a1 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4dc28014bda4b8d8194f067b6af7446 = $('<div id="html_f4dc28014bda4b8d8194f067b6af7446" style="width: 100.0%; height: 100.0%;">Atlantic<br><br>Mean Daily Price: $34.34<br><br>Listings: 118</div>')[0];
+                popup_0f21529aa2014ff0ba44cb2c82e504a1.setContent(html_f4dc28014bda4b8d8194f067b6af7446);
+            
+
+            circle_marker_8015dd8c3f164727b892423a7b102619.bindPopup(popup_0f21529aa2014ff0ba44cb2c82e504a1);
+
+            
+        
+    
+            var circle_marker_abb1c1376d2c4e9a9f02a1b1e1493a09 = L.circleMarker(
+                [47.69690618291692,-122.33902239510456],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.1666666666666665,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_a8ba8bc93c1f477080422ffed32d980a = L.popup({maxWidth: '300'});
+
+            
+                var html_4517f6efa8e6475da6f3e55b16f6d2e3 = $('<div id="html_4517f6efa8e6475da6f3e55b16f6d2e3" style="width: 100.0%; height: 100.0%;">North College Park<br><br>Mean Daily Price: $34.0<br><br>Listings: 65</div>')[0];
+                popup_a8ba8bc93c1f477080422ffed32d980a.setContent(html_4517f6efa8e6475da6f3e55b16f6d2e3);
+            
+
+            circle_marker_abb1c1376d2c4e9a9f02a1b1e1493a09.bindPopup(popup_a8ba8bc93c1f477080422ffed32d980a);
+
+            
+        
+    
+            var circle_marker_fb994ae8ddab4376a6eb828c58b2b287 = L.circleMarker(
+                [47.72120725222754,-122.33433294788139],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.8333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_406eb08654f444189d20b56613b37084 = L.popup({maxWidth: '300'});
+
+            
+                var html_eb4a1582759d41c3bdf61ee538729052 = $('<div id="html_eb4a1582759d41c3bdf61ee538729052" style="width: 100.0%; height: 100.0%;">Haller Lake<br><br>Mean Daily Price: $33.54<br><br>Listings: 55</div>')[0];
+                popup_406eb08654f444189d20b56613b37084.setContent(html_eb4a1582759d41c3bdf61ee538729052);
+            
+
+            circle_marker_fb994ae8ddab4376a6eb828c58b2b287.bindPopup(popup_406eb08654f444189d20b56613b37084);
+
+            
+        
+    
+            var circle_marker_f910f269a1d1407fb23db4406205fbdc = L.circleMarker(
+                [47.545667872190435,-122.37117137448982],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_f71b5884600848a3bc071a80276e9515 = L.popup({maxWidth: '300'});
+
+            
+                var html_1b66d2de06d7444b91f8ba0593bccb67 = $('<div id="html_1b66d2de06d7444b91f8ba0593bccb67" style="width: 100.0%; height: 100.0%;">High Point<br><br>Mean Daily Price: $33.42<br><br>Listings: 37</div>')[0];
+                popup_f71b5884600848a3bc071a80276e9515.setContent(html_1b66d2de06d7444b91f8ba0593bccb67);
+            
+
+            circle_marker_f910f269a1d1407fb23db4406205fbdc.bindPopup(popup_f71b5884600848a3bc071a80276e9515);
+
+            
+        
+    
+            var circle_marker_ddcb049a38f248b4a9719745a00108c1 = L.circleMarker(
+                [47.56371768187425,-122.3643447899779],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.9666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_51b76040d8e0455486942bc266764a4d = L.popup({maxWidth: '300'});
+
+            
+                var html_60bb801b1ede42aeaeec3464ab08f3e6 = $('<div id="html_60bb801b1ede42aeaeec3464ab08f3e6" style="width: 100.0%; height: 100.0%;">North Delridge<br><br>Mean Daily Price: $32.82<br><br>Listings: 59</div>')[0];
+                popup_51b76040d8e0455486942bc266764a4d.setContent(html_60bb801b1ede42aeaeec3464ab08f3e6);
+            
+
+            circle_marker_ddcb049a38f248b4a9719745a00108c1.bindPopup(popup_51b76040d8e0455486942bc266764a4d);
+
+            
+        
+    
+            var circle_marker_4f6f92af36254ac6aae8cae88cb47002 = L.circleMarker(
+                [47.693894024753526,-122.35369074932942],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6.766666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_51f063eb0b394b2cb0c6a5e97a080630 = L.popup({maxWidth: '300'});
+
+            
+                var html_8a0786f63a4c43c3b2f976a3e2e959b1 = $('<div id="html_8a0786f63a4c43c3b2f976a3e2e959b1" style="width: 100.0%; height: 100.0%;">Greenwood<br><br>Mean Daily Price: $32.7<br><br>Listings: 203</div>')[0];
+                popup_51f063eb0b394b2cb0c6a5e97a080630.setContent(html_8a0786f63a4c43c3b2f976a3e2e959b1);
+            
+
+            circle_marker_4f6f92af36254ac6aae8cae88cb47002.bindPopup(popup_51f063eb0b394b2cb0c6a5e97a080630);
+
+            
+        
+    
+            var circle_marker_009081be67ad41608207d232c518dd08 = L.circleMarker(
+                [47.70708479818257,-122.296457782379],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_c4637e3cf7d74343bda62d464db2ea0f = L.popup({maxWidth: '300'});
+
+            
+                var html_abc16d3a43ac4c8cab5515623a9043d8 = $('<div id="html_abc16d3a43ac4c8cab5515623a9043d8" style="width: 100.0%; height: 100.0%;">Meadowbrook<br><br>Mean Daily Price: $32.63<br><br>Listings: 19</div>')[0];
+                popup_c4637e3cf7d74343bda62d464db2ea0f.setContent(html_abc16d3a43ac4c8cab5515623a9043d8);
+            
+
+            circle_marker_009081be67ad41608207d232c518dd08.bindPopup(popup_c4637e3cf7d74343bda62d464db2ea0f);
+
+            
+        
+    
+            var circle_marker_02296bc937dc407ebd0ae9c0d91aa99a = L.circleMarker(
+                [47.53074800455037,-122.37052991477398],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.5333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_e2e4dabb052947b3ab8f35bba194a737 = L.popup({maxWidth: '300'});
+
+            
+                var html_31478f7c19124db8a8a5583f4ec04665 = $('<div id="html_31478f7c19124db8a8a5583f4ec04665" style="width: 100.0%; height: 100.0%;">Roxhill<br><br>Mean Daily Price: $32.55<br><br>Listings: 16</div>')[0];
+                popup_e2e4dabb052947b3ab8f35bba194a737.setContent(html_31478f7c19124db8a8a5583f4ec04665);
+            
+
+            circle_marker_02296bc937dc407ebd0ae9c0d91aa99a.bindPopup(popup_e2e4dabb052947b3ab8f35bba194a737);
+
+            
+        
+    
+            var circle_marker_c63a0b7e103c4ea5a22aadf96d9bf37a = L.circleMarker(
+                [47.525744582987535,-122.32333515482387],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.43333333333333335,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_f18ba5ae280d4bcfaf8cb9f912adc993 = L.popup({maxWidth: '300'});
+
+            
+                var html_bf0300cbf1874606af1b36c9848431af = $('<div id="html_bf0300cbf1874606af1b36c9848431af" style="width: 100.0%; height: 100.0%;">South Park<br><br>Mean Daily Price: $32.04<br><br>Listings: 13</div>')[0];
+                popup_f18ba5ae280d4bcfaf8cb9f912adc993.setContent(html_bf0300cbf1874606af1b36c9848431af);
+            
+
+            circle_marker_c63a0b7e103c4ea5a22aadf96d9bf37a.bindPopup(popup_f18ba5ae280d4bcfaf8cb9f912adc993);
+
+            
+        
+    
+            var circle_marker_9e2956077b7d43eca97904f48c794889 = L.circleMarker(
+                [47.55423832303588,-122.3033741887018],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2.7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_bca924dfc3ac452b8abcd403117bec11 = L.popup({maxWidth: '300'});
+
+            
+                var html_1ccc1c69a9ec417faf0407ee818925d1 = $('<div id="html_1ccc1c69a9ec417faf0407ee818925d1" style="width: 100.0%; height: 100.0%;">Mid-Beacon Hill<br><br>Mean Daily Price: $31.6<br><br>Listings: 81</div>')[0];
+                popup_bca924dfc3ac452b8abcd403117bec11.setContent(html_1ccc1c69a9ec417faf0407ee818925d1);
+            
+
+            circle_marker_9e2956077b7d43eca97904f48c794889.bindPopup(popup_bca924dfc3ac452b8abcd403117bec11);
+
+            
+        
+    
+            var circle_marker_b8b1a615f96344d58c533e84ef17bc69 = L.circleMarker(
+                [47.724724638047505,-122.30420930180415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.9333333333333333,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_d5e54f62488e4613946b76d1a6d6a4d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a7e70f06a8f4886aeec1c94730f09a1 = $('<div id="html_5a7e70f06a8f4886aeec1c94730f09a1" style="width: 100.0%; height: 100.0%;">Olympic Hills<br><br>Mean Daily Price: $30.81<br><br>Listings: 28</div>')[0];
+                popup_d5e54f62488e4613946b76d1a6d6a4d9.setContent(html_5a7e70f06a8f4886aeec1c94730f09a1);
+            
+
+            circle_marker_b8b1a615f96344d58c533e84ef17bc69.bindPopup(popup_d5e54f62488e4613946b76d1a6d6a4d9);
+
+            
+        
+    
+            var circle_marker_ff5ec0a1e89d4e44b91dfab7583f26a6 = L.circleMarker(
+                [47.52646620112991,-122.27324054717589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_43cffd1901244975950a8204fd273dab = L.popup({maxWidth: '300'});
+
+            
+                var html_e6252e720aac45d3960a9d3bccac4d7f = $('<div id="html_e6252e720aac45d3960a9d3bccac4d7f" style="width: 100.0%; height: 100.0%;">Dunlap<br><br>Mean Daily Price: $30.45<br><br>Listings: 31</div>')[0];
+                popup_43cffd1901244975950a8204fd273dab.setContent(html_e6252e720aac45d3960a9d3bccac4d7f);
+            
+
+            circle_marker_ff5ec0a1e89d4e44b91dfab7583f26a6.bindPopup(popup_43cffd1901244975950a8204fd273dab);
+
+            
+        
+    
+            var circle_marker_fc4a4631302549b19fa1869f635d9051 = L.circleMarker(
+                [47.51334541438159,-122.2599654827848],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.7666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_fa83193212064a819a2ed3e17310bb07 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f35d8eb8f484f69a5a0e900f0fd0ff6 = $('<div id="html_6f35d8eb8f484f69a5a0e900f0fd0ff6" style="width: 100.0%; height: 100.0%;">Rainier Beach<br><br>Mean Daily Price: $28.8<br><br>Listings: 53</div>')[0];
+                popup_fa83193212064a819a2ed3e17310bb07.setContent(html_6f35d8eb8f484f69a5a0e900f0fd0ff6);
+            
+
+            circle_marker_fc4a4631302549b19fa1869f635d9051.bindPopup(popup_fa83193212064a819a2ed3e17310bb07);
+
+            
+        
+    
+            var circle_marker_e2572a0de42c4a3bb8a614018ae10b07 = L.circleMarker(
+                [47.50970391207437,-122.37938303122625],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.7666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_e1254090e937466b9b9c40af513e8999 = L.popup({maxWidth: '300'});
+
+            
+                var html_3fc0a2c07b2b4851a7c33050deb3b5bd = $('<div id="html_3fc0a2c07b2b4851a7c33050deb3b5bd" style="width: 100.0%; height: 100.0%;">Arbor Heights<br><br>Mean Daily Price: $28.22<br><br>Listings: 23</div>')[0];
+                popup_e1254090e937466b9b9c40af513e8999.setContent(html_3fc0a2c07b2b4851a7c33050deb3b5bd);
+            
+
+            circle_marker_e2572a0de42c4a3bb8a614018ae10b07.bindPopup(popup_e1254090e937466b9b9c40af513e8999);
+
+            
+        
+    
+            var circle_marker_ac812621b03742f4b1962770c0525049 = L.circleMarker(
+                [47.717348064237115,-122.36025130502952],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_7a8badc07c7f4a6dad5aef18e34da9b0 = L.popup({maxWidth: '300'});
+
+            
+                var html_5065cb61ae914ba99eee50f8e70d9862 = $('<div id="html_5065cb61ae914ba99eee50f8e70d9862" style="width: 100.0%; height: 100.0%;">Broadview<br><br>Mean Daily Price: $27.85<br><br>Listings: 36</div>')[0];
+                popup_7a8badc07c7f4a6dad5aef18e34da9b0.setContent(html_5065cb61ae914ba99eee50f8e70d9862);
+            
+
+            circle_marker_ac812621b03742f4b1962770c0525049.bindPopup(popup_7a8badc07c7f4a6dad5aef18e34da9b0);
+
+            
+        
+    
+            var circle_marker_c3ac9e3e3d7c4aa6adc0701c288555f8 = L.circleMarker(
+                [47.52787087302068,-122.34876678981611],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2666666666666666,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_2dbb29d38f874573828d12435875a895 = L.popup({maxWidth: '300'});
+
+            
+                var html_874190bac82f40d5b90165add79da3b2 = $('<div id="html_874190bac82f40d5b90165add79da3b2" style="width: 100.0%; height: 100.0%;">Highland Park<br><br>Mean Daily Price: $27.57<br><br>Listings: 38</div>')[0];
+                popup_2dbb29d38f874573828d12435875a895.setContent(html_874190bac82f40d5b90165add79da3b2);
+            
+
+            circle_marker_c3ac9e3e3d7c4aa6adc0701c288555f8.bindPopup(popup_2dbb29d38f874573828d12435875a895);
+
+            
+        
+    
+            var circle_marker_c2d9d221dbd944cfb7a15e9a4fca11d9 = L.circleMarker(
+                [47.50195729556762,-122.26189895694104],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 0.6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_9a4988bf227948d0b46e2f63815d6499 = L.popup({maxWidth: '300'});
+
+            
+                var html_23ef18a4cccd4350ab0fcf5b687ffc27 = $('<div id="html_23ef18a4cccd4350ab0fcf5b687ffc27" style="width: 100.0%; height: 100.0%;">Rainier View<br><br>Mean Daily Price: $27.04<br><br>Listings: 18</div>')[0];
+                popup_9a4988bf227948d0b46e2f63815d6499.setContent(html_23ef18a4cccd4350ab0fcf5b687ffc27);
+            
+
+            circle_marker_c2d9d221dbd944cfb7a15e9a4fca11d9.bindPopup(popup_9a4988bf227948d0b46e2f63815d6499);
+
+            
+        
+    
+            var circle_marker_f7eadaa6b9934b7f84581f412a6ab9b7 = L.circleMarker(
+                [47.71682762440108,-122.31952482022744],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.0666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_eb5c9400bf5a430aabd64dbceeac63d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_bcd861efadf34b69af46d2b8ec47ab11 = $('<div id="html_bcd861efadf34b69af46d2b8ec47ab11" style="width: 100.0%; height: 100.0%;">Pinehurst<br><br>Mean Daily Price: $26.68<br><br>Listings: 32</div>')[0];
+                popup_eb5c9400bf5a430aabd64dbceeac63d0.setContent(html_bcd861efadf34b69af46d2b8ec47ab11);
+            
+
+            circle_marker_f7eadaa6b9934b7f84581f412a6ab9b7.bindPopup(popup_eb5c9400bf5a430aabd64dbceeac63d0);
+
+            
+        
+    
+            var circle_marker_db6415da167e4ff98e450f12b525c49c = L.circleMarker(
+                [47.52566092195482,-122.35956165050288],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.3666666666666667,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_ec94ab5547a141ff83006b9a5b7ec67c = L.popup({maxWidth: '300'});
+
+            
+                var html_1aa4673ffb5543c5bc8cfa59d1c8b2cb = $('<div id="html_1aa4673ffb5543c5bc8cfa59d1c8b2cb" style="width: 100.0%; height: 100.0%;">South Delridge<br><br>Mean Daily Price: $26.47<br><br>Listings: 41</div>')[0];
+                popup_ec94ab5547a141ff83006b9a5b7ec67c.setContent(html_1aa4673ffb5543c5bc8cfa59d1c8b2cb);
+            
+
+            circle_marker_db6415da167e4ff98e450f12b525c49c.bindPopup(popup_ec94ab5547a141ff83006b9a5b7ec67c);
+
+            
+        
+    
+            var circle_marker_7c0d8b7b74474b06b2adfc924ddf53a2 = L.circleMarker(
+                [47.53992340656045,-122.27707990096671],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.7,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_bd07e6618e93404bb7f91d3d5b5c7b68 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5440dd0bf8546f887e8f2fd7d4a8cb2 = $('<div id="html_c5440dd0bf8546f887e8f2fd7d4a8cb2" style="width: 100.0%; height: 100.0%;">Brighton<br><br>Mean Daily Price: $25.67<br><br>Listings: 51</div>')[0];
+                popup_bd07e6618e93404bb7f91d3d5b5c7b68.setContent(html_c5440dd0bf8546f887e8f2fd7d4a8cb2);
+            
+
+            circle_marker_7c0d8b7b74474b06b2adfc924ddf53a2.bindPopup(popup_bd07e6618e93404bb7f91d3d5b5c7b68);
+
+            
+        
+    
+            var circle_marker_cac7eb9c59634d25a8a575fbe1785111 = L.circleMarker(
+                [47.52766681137423,-122.28689503268163],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.2333333333333334,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_73e7af68ea2247f0a368426d03f15733 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a95203f9b4d4f968339852c2d6de1f1 = $('<div id="html_6a95203f9b4d4f968339852c2d6de1f1" style="width: 100.0%; height: 100.0%;">South Beacon Hill<br><br>Mean Daily Price: $24.9<br><br>Listings: 37</div>')[0];
+                popup_73e7af68ea2247f0a368426d03f15733.setContent(html_6a95203f9b4d4f968339852c2d6de1f1);
+            
+
+            circle_marker_cac7eb9c59634d25a8a575fbe1785111.bindPopup(popup_73e7af68ea2247f0a368426d03f15733);
+
+            
+        
+    
+            var circle_marker_ea88a74427d943f4a54e3b9637f7e9ce = L.circleMarker(
+                [47.54386552201802,-122.35524042789753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#58D68D",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#58D68D",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1.6,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_22e0076228e344b38cec6e89e1f54997);
+            
+    
+            var popup_72f44ac518904c1d9d257e116e56d9b2 = L.popup({maxWidth: '300'});
+
+            
+                var html_937945529f014caa855948da4d2b7640 = $('<div id="html_937945529f014caa855948da4d2b7640" style="width: 100.0%; height: 100.0%;">Riverview<br><br>Mean Daily Price: $24.82<br><br>Listings: 48</div>')[0];
+                popup_72f44ac518904c1d9d257e116e56d9b2.setContent(html_937945529f014caa855948da4d2b7640);
+            
+
+            circle_marker_ea88a74427d943f4a54e3b9637f7e9ce.bindPopup(popup_72f44ac518904c1d9d257e116e56d9b2);
+
+            
+        
+</script>

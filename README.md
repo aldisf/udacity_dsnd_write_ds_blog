@@ -56,7 +56,7 @@ Bubble size indicates relative number of listings across neighbourhoods.
 
 Most expensive neighbourhood : South Lake Union ($89.8 /night/person)
 
-Least expensive neighbourhood : Pinehurst ($24.8 /night/person)
+Least expensive neighbourhood : Riverview ($24.8 /night/person)
 
 The results from this step are provided in this repository: 
     - neighbourhood_data.csv - contains all aggregated neighbourhood level data (mean price, latitude, longitude, # listings, etc)
